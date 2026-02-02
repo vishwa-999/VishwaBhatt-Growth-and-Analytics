@@ -7,23 +7,12 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         body { font-family: 'Inter', sans-serif; background-color: #f3f4f6; }
-        /* Virgin Atlantic Red & Plum Tones */
         .virgin-red { color: #e10600; }
         .virgin-bg { background-color: #e10600; }
         .glass-card { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); }
         .metric-box { border-top: 4px solid #e10600; transition: all 0.3s ease; }
         .metric-box:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
-        .btn-link { 
-            display: inline-block; 
-            padding: 0.5rem 1rem; 
-            background-color: #e10600; 
-            color: white; 
-            font-weight: bold; 
-            border-radius: 0.5rem; 
-            font-size: 0.75rem;
-            transition: background 0.3s;
-        }
-        .btn-link:hover { background-color: #b30500; }
+        .timeline-line { border-left: 2px solid #e10600; }
     </style>
 </head>
 <body class="p-4 md:p-12">
@@ -32,14 +21,14 @@
         <div class="virgin-bg h-3 w-full"></div>
 
         <header class="p-10 text-center border-b">
-            <h1 class="text-4xl font-black text-gray-900 tracking-tight">VISHWA Y BHATT</h1>
+            <h1 class="text-4xl font-black text-gray-900 tracking-tight uppercase">Vishwa Y Bhatt</h1>
             <p class="text-xl virgin-red font-bold mt-2 uppercase tracking-widest">Finance Manager | Transformation & Automation</p>
-            <div class="mt-4 flex justify-center space-x-6 text-gray-600 font-medium">
-                <span>📍 Near Crawley / London</span>
+            <div class="mt-4 flex flex-wrap justify-center gap-4 text-gray-600 font-medium text-sm">
+                <span>📍 Crawley, UK</span>
                 <span>•</span>
-                <span>🎓 ACCA Candidate (FM & FR)</span>
+                <span>📞 (0)7887180718</span>
                 <span>•</span>
-                <a href="mailto:vishwaybhatt@gmail.com" class="hover:virgin-red">Contact</a>
+                <a href="mailto:vishwaybhatt@gmail.com" class="hover:virgin-red underline">vishwaybhatt@gmail.com</a>
             </div>
         </header>
 
@@ -52,73 +41,63 @@
             </p>
         </section>
 
-        <section class="px-10 pb-10 grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div class="metric-box p-6 bg-gray-50 rounded-xl">
-                <h3 class="font-bold text-gray-800 mb-2 uppercase text-sm tracking-wide">Automation & Scale</h3>
-                <p class="text-sm text-gray-600">Replacing manual Excel workbooks with **Python (Pandas)** and **Databricks** workflows to ensure 100% data integrity.</p>
-            </div>
-            <div class="metric-box p-6 bg-gray-50 rounded-xl">
-                <h3 class="font-bold text-gray-800 mb-2 uppercase text-sm tracking-wide">Insight & Decision</h3>
-                <p class="text-sm text-gray-600">Translating complex **Econometric models** and financial risks into clear Board-level Power BI dashboards.</p>
-            </div>
-            <div class="metric-box p-6 bg-gray-50 rounded-xl">
-                <h3 class="font-bold text-gray-800 mb-2 uppercase text-sm tracking-wide">Change Agent</h3>
-                <p class="text-sm text-gray-600">Leading finance transformation initiatives, from system migrations (Xero/ERP) to **AI-enabled forecasting**.</p>
-            </div>
-        </section>
-
         <section class="p-10 border-t">
             <h2 class="text-2xl font-bold text-gray-800 mb-8">Transformation Portfolio</h2>
-            
-            <div class="space-y-10">
-                <div class="flex flex-col md:flex-row gap-6">
-                    <div class="md:w-1/3">
-                        <div class="bg-gray-200 h-40 rounded-lg flex items-center justify-center text-gray-500 font-bold border-2 border-dashed border-gray-300">
-                            Automation Engine
-                        </div>
+            <div class="space-y-12">
+                <div class="flex flex-col md:flex-row gap-8 items-center">
+                    <div class="w-full md:w-1/3 bg-gray-200 h-48 rounded-lg flex items-center justify-center text-gray-500 font-bold border-2 border-dashed border-gray-300">
+                        [13-Week Forecast Dashboard Image]
                     </div>
                     <div class="md:w-2/3">
                         <h3 class="text-xl font-bold text-gray-800">Automated 13-Week Forecasting Engine</h3>
-                        <p class="text-gray-600 mt-2">Redesigned a manual reporting process into a scalable Python tool. Reduced reporting latency by 60% while providing senior leaders with real-time liquidity visibility.</p>
-                        <div class="mt-4 flex flex-wrap gap-3 items-center">
-                            <span class="px-3 py-1 bg-red-100 text-red-700 text-xs font-bold rounded-full">Python</span>
-                            <span class="px-3 py-1 bg-blue-100 text-blue-700 text-xs font-bold rounded-full">Data Integrity</span>
-                            <a href="https://github.com/vishwa-999/VishwaBhatt-Growth-and-Analytics" target="_blank" class="btn-link">View Repository ↗</a>
-                        </div>
+                        <p class="text-gray-600 mt-2 italic">Role Target: Automation & Scale</p>
+                        <p class="text-gray-600 mt-2">Redesigned manual reporting into a scalable Python tool. Reduced reporting latency by 60% while providing real-time liquidity visibility to senior stakeholders.</p>
+                        <a href="https://github.com/vishwa-999/VishwaBhatt-Growth-and-Analytics" target="_blank" class="mt-4 inline-block virgin-red font-bold hover:underline">View Repository ↗</a>
                     </div>
                 </div>
 
-                <div class="flex flex-col md:flex-row gap-6">
-                    <div class="md:w-1/3">
-                        <div class="bg-gray-200 h-40 rounded-lg flex items-center justify-center text-gray-500 font-bold border-2 border-dashed border-gray-300">
-                            Risk Analysis
-                        </div>
-                    </div>
-                    <div class="md:w-2/3">
-                        <h3 class="text-xl font-bold text-gray-800">Automated Multi-Asset Portfolio Risk Analyzer</h3>
-                        <p class="text-gray-600 mt-2">Developed a quantitative framework for strategic decision-making. Automates historical market data analysis to evaluate risk-adjusted returns (Sharpe Ratio) and portfolio stability.</p>
-                        <div class="mt-4 flex flex-wrap gap-3 items-center">
-                            <span class="px-3 py-1 bg-purple-100 text-purple-700 text-xs font-bold rounded-full">Quantitative Analysis</span>
-                            <span class="px-3 py-1 bg-green-100 text-green-700 text-xs font-bold rounded-full">Strategy</span>
-                            <a href="https://github.com/vishwa-999/Financial_Portfolio_Analyzer" target="_blank" class="btn-link">View Model ↗</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="flex flex-col md:flex-row gap-6">
-                    <div class="md:w-1/3">
-                        <div class="bg-gray-200 h-40 rounded-lg flex items-center justify-center text-gray-500 font-bold border-2 border-dashed border-gray-300">
-                            Econometrics Hub
-                        </div>
+                <div class="flex flex-col md:flex-row gap-8 items-center">
+                    <div class="w-full md:w-1/3 bg-gray-200 h-48 rounded-lg flex items-center justify-center text-gray-500 font-bold border-2 border-dashed border-gray-300">
+                        [Econometrics Panel Data Image]
                     </div>
                     <div class="md:w-2/3">
                         <h3 class="text-xl font-bold text-gray-800">PhD Research: Causal Inference in Trade</h3>
-                        <p class="text-gray-600 mt-2">Applying rigorous statistical modeling (Econometrics) to analyze South Asian trade patterns. This foundation ensures accuracy in high-stakes financial forecasting and trend analysis.</p>
-                        <div class="mt-4 flex flex-wrap gap-3 items-center">
-                            <span class="px-3 py-1 bg-indigo-100 text-indigo-700 text-xs font-bold rounded-full">Regression</span>
-                            <span class="px-3 py-1 bg-orange-100 text-orange-700 text-xs font-bold rounded-full">Statistical Rigor</span>
-                            <a href="https://github.com/vishwa-999/Dynamic-Sales-Forecasting" target="_blank" class="btn-link">View Forecasting Project ↗</a>
-                        </div>
+                        <p class="text-gray-600 mt-2">Applying rigorous statistical modeling (Econometrics) to analyze South Asian trade patterns. This ensures accuracy in high-stakes financial forecasting and trend analysis.</p>
+                        <a href="https://github.com/vishwa-999/Dynamic-Sales-Forecasting" target="_blank" class="mt-4 inline-block virgin-red font-bold hover:underline">View Analysis Logic ↗</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="p-10 border-t bg-gray-50">
+            <h2 class="text-2xl font-bold text-gray-800 mb-8">Career Journey</h2>
+            
+            <div class="flex flex-col md:flex-row gap-10">
+                <div class="md:w-1/4 text-center">
+                    <img src="IMG_000861 2.jpg" alt="Vishwa Y Bhatt" class="rounded-full shadow-xl border-4 border-white mb-4 mx-auto w-48 h-48 object-cover">
+                    <p class="text-sm font-bold text-gray-500">Finance Change Agent</p>
+                </div>
+
+                <div class="md:w-3/4 space-y-8 timeline-line pl-6">
+                    <div>
+                        <span class="virgin-red font-bold">Nov 2025 - Present</span>
+                        <h4 class="text-lg font-bold">Finance Manager</h4>
+                        <p class="text-gray-600">GrowthCurve | London, UK</p>
+                    </div>
+                    <div>
+                        <span class="text-gray-400 font-bold">Feb 2024 - Oct 2025</span>
+                        <h4 class="text-lg font-bold">Asst. Manager, Finance & Data</h4>
+                        <p class="text-gray-600">Agrocel Industries</p>
+                    </div>
+                    <div>
+                        <span class="text-gray-400 font-bold">Nov 2021 - Dec 2023</span>
+                        <h4 class="text-lg font-bold">Finance & Business Analyst</h4>
+                        <p class="text-gray-600">Urban Science (UK)</p>
+                    </div>
+                    <div>
+                        <span class="text-gray-400 font-bold">March 2014 - Sep 2021</span>
+                        <h4 class="text-lg font-bold">Senior Finance Manager</h4>
+                        <p class="text-gray-600">Shanro Key Chem</p>
                     </div>
                 </div>
             </div>
@@ -129,14 +108,14 @@
                 <div>
                     <h4 class="text-virgin-red font-bold uppercase tracking-widest text-sm mb-4">Qualifications</h4>
                     <ul class="space-y-2 opacity-80 text-sm">
-                        <li>• ACCA Candidate (Sitting FM & FR March 2026)</li>
+                        <li>• **Partly Qualified ACCA** (Pursuing)</li>
                         <li>• MSc Financial Technology | Henley Business School</li>
                         <li>• PhD in Commerce (Econometrics)</li>
                     </ul>
                 </div>
                 <div class="text-right">
-                    <p class="text-sm opacity-50 mb-4">Ready to help future-proof Virgin Atlantic's reporting capability.</p>
-                    <a href="mailto:vishwaybhatt@gmail.com" class="inline-block px-8 py-3 virgin-bg text-white font-bold rounded-full hover:bg-red-700 transition">Apply My Expertise</a>
+                    <p class="text-sm opacity-50 mb-4 font-bold uppercase">Virgin Atlantic VHQ Applicant</p>
+                    <a href="mailto:vishwaybhatt@gmail.com" class="inline-block px-8 py-3 virgin-bg text-white font-bold rounded-full hover:bg-red-700 transition shadow-lg">Submit Interest</a>
                 </div>
             </div>
         </footer>
